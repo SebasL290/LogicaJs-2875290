@@ -23,9 +23,19 @@ function cerrar (){
     flotante.style.top ='-100vh';
     flotante.style.transitionDuration ='.5s';
 }
+function siguiente () {
+    imgPrincipal.src="img2.jpg"
+}
+function anterior () {
+    imgPrincipal.src="img1.jpg"
+}
 
 //Eventos
 btnNumeros[0].addEventListener('click', lightbox);
 btnNumeros[1].addEventListener('click', lightbox);
 equis.addEventListener('click', cerrar);
 cuadroOpacidad.addEventListener('click', cerrar)
+btnAnterior.addEventListener('click' ,anterior);
+btnSiguiente.addEventListener('click' ,siguiente)
+
+
